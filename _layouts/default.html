@@ -11,35 +11,50 @@
 
         <!-- Custom CSS -->
         <link rel="stylesheet" href="/css/main.css">
+		
+		<!-- Bootstrap CSS -->
+        <!-- <link rel="stylesheet" href="/bootstrap/css/bootstrap.css"> -->
 
     </head>
     <body>
 
         <div class="container">
           <div class="site">
-            <div class="header">
-              <h1 class="title"><a href="/">{{ site.name }}</a></h1>
-              <a class="extra" href="/">home</a>
-            </div>
-
+			
+			<div id="header_wrap" class="outer">
+		      <header class="inner">
+				<a id="forkme_banner" href="{repository_url}">View on GitHub</a>
+				
+				<h1 id="project_title"><a href="/">{{ site.name }}</a></h1>
+				<ul id="navigation_bar">
+				  <li><a href="/">Home</a></li>
+				  <li><a href="/blog.html">Blog</a></li>
+				  <li><a href="/directx.html">DirectX11</a></li>
+				</ul>
+				
+			  </header>
+			</div>
+			
+			  <div id="main_content_wrap" class="outer">
+			    <section id="main_content" class="inner">
                 {{ content }}
+				</section>
+			  </div>
 
-            <div class="footer">
-              <div class="contact">
+            <div id="footer_wrap" class="outer">
+				<footer class="inner">
                 <p>
-                  Your Name<br />
-                  What You Are<br />
-                  your@email.com
+                  Adrian Kelly<br />
+                  Game Developer<br />
+                  votingelephant@outlook.ie
                 </p>
-              </div>
-              <div class="contact">
                 <p>
-                  <a href="http://github.com/yourusername/">github.com/yourusername</a><br />
-                  <a href="http://twitter.com/yourusername/">twitter.com/yourusername</a><br />
+                  <a href="http://github.com/votingelephant/">github.com/votingelephant</a><br />
+                  <a href="http://twitter.com/votingelephant/">twitter.com/votingelephant</a><br />
                 </p>
+				</footer>
               </div>
-            </div>
-          </div>
+          </div> <!-- /site -->
         </div> <!-- /container -->
 
     </body>
