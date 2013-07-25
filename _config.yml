@@ -1,3 +1,3 @@
 name: Adrians Website
 markdown: redcarpet
-pygments: false
+pygments: true
